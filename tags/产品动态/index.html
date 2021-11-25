@@ -9,7 +9,7 @@
     
     <title>
         
-            用户画像和用户旅程图相关分享 |
+            Tag: 产品动态 |
         
         产品经理一年级生
     </title>
@@ -69,7 +69,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class=""
+                            <a class="active"
                                href="/tags"
                             >
                                 TAGS
@@ -111,7 +111,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class=""
+                    <a class="active"
                        href="/tags">TAGS</a>
                 </li>
             
@@ -136,155 +136,42 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="article-content-container">
-
-        <div class="article-title">
-            <span class="title-hover-animation">用户画像和用户旅程图相关分享</span>
+    <div class="tag-container">
+        <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;产品动态
         </div>
-
-        
-            <div class="article-header">
-                <div class="avatar">
-                    <img src="/images/touxiang.jpeg">
-                </div>
-                <div class="info">
-                    <div class="author">
-                        <span class="name">Leou</span>
-                        
-                            <span class="author-label">一年级生</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i>&nbsp;2021-11-24 23:21:09
-    </span>
+        <div class="tag-post-list">
+            
+<div class="archive-list-container">
     
-    
-
-    
-    
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-        </span>
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2020</span>
+                <span class="archive-year-post-count">[1]</span>
+            </div>
+            <ul class="article-list">
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2020/01/26/%E4%BB%8A%E5%A4%A9%EF%BC%8C%E4%B8%BB%E8%A6%81%E8%81%8A%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E7%8A%B6%E6%80%81/"
+                        >今天,主要聊一下微信状态</a>
+                        <span class="article-date">01-26</span>
+                    </li>
+                
+            </ul>
+        </section>
     
 </div>
 
-                    </div>
-                </div>
-            </div>
-        
-
-        <div class="article-content markdown-body">
-            
         </div>
-
-        
-
-        
-            <div class="article-nav">
-                
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/11/24/%E4%BB%8A%E5%A4%A9%EF%BC%8C%E4%B8%BB%E8%A6%81%E8%81%8A%E4%B8%80%E4%B8%8B%E5%BE%AE%E4%BF%A1%E7%8A%B6%E6%80%81/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">今天，主要聊一下微信状态</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-            </div>
-        
-
-        
-            <div class="comment-container">
-                <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fas fa-comments">&nbsp;Comments</i>
     </div>
+
+    <div class="tag-paginator">
+        <div class="paginator">
     
 
-        
-            
-    <div class="valine-container">
-        <script 
-                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
-        <div id="vcomments"></div>
-        <script >
-            function loadValine() {
-                new Valine({
-                    el: '#vcomments',
-                    appId: 'hLT9Uux79wN5kFtGXcsSRMuE-gzGzoHsz',
-                    appKey: 'LyjWEPDjlARD2NmquaDQBXPh',
-                    meta: ['nick', 'mail', 'link'],
-                    avatar: 'wavatar',
-                    enableQQ: true,
-                    placeholder: '😜尽情吐槽吧~',
-                    lang: 'en'.toLowerCase()
-                });
-
-                function getAuthor(language) {
-                    switch (language) {
-                        case 'en':
-                            return 'Author';
-                        case 'zh-CN':
-                            return '博主';
-                        default:
-                            return 'Master';
-                    }
-                }
-
-                // Add "Author" identify
-                const getValineDomTimer = setInterval(() => {
-                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
-                    if (vcards.length > 0) {
-                        let author = 'Leou';
-
-                        if (author) {
-                            for (let vcard of vcards) {
-                                const vnick_dom = vcard.querySelector('.vhead .vnick');
-                                const vnick = vnick_dom.innerHTML;
-                                if (vnick === author) {
-                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
-                                }
-                            }
-                        }
-                        clearInterval(getValineDomTimer);
-                    } else {
-                        clearInterval(getValineDomTimer);
-                    }
-                }, 2000);
-            }
-
-            if ('false') {
-                const loadValineTimeout = setTimeout(() => {
-                    loadValine();
-                    clearTimeout(loadValineTimeout);
-                }, 1000);
-            } else {
-                window.addEventListener('DOMContentLoaded', loadValine);
-            }
-        </script>
-    </div>
-
-
-
-        
     
 </div>
 
-            </div>
-        
     </div>
 </div>
 
@@ -332,27 +219,6 @@
     </div>
 
     
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="tools-item page-aside-toggle">
-                <i class="fas fa-outdent"></i>
-            </li>
-        
-
-        <!-- go comment -->
-        
-            <li class="go-comment">
-                <i class="fas fa-comment"></i>
-            </li>
-        
-    </ul>
-</div>
-
-        </div>
-    
 
     <div class="right-bottom-side-tools">
         <div class="side-tools-container">
@@ -397,14 +263,6 @@
 
     </div>
 
-    
-        <aside class="page-aside">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        
-    </div>
-</div>
-        </aside>
     
 
     <div class="image-viewer-container">
@@ -458,8 +316,6 @@
 
 
 <div class="post-scripts">
-    
-        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/toc.js"></script>
     
 </div>
 
